@@ -1,0 +1,6 @@
+{
+    "packageClassNames": [
+        "com.ainirobot.sm24jkxw.Sm24jkxwPackage",
+        "com.tecsun.read_card.TecsunReadCardPackage"
+    ]
+}

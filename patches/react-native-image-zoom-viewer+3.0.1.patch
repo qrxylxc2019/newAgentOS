@@ -1,0 +1,46 @@
+diff --git a/node_modules/react-native-image-zoom-viewer/built/image-viewer.component.js b/node_modules/react-native-image-zoom-viewer/built/image-viewer.component.js
+index 3ca5e2b..9d08fd4 100644
+--- a/node_modules/react-native-image-zoom-viewer/built/image-viewer.component.js
++++ b/node_modules/react-native-image-zoom-viewer/built/image-viewer.component.js
+@@ -190,7 +190,7 @@ var ImageViewer = /** @class */ (function (_super) {
+         _this.handleLongPress = function (image) {
+             if (_this.props.saveToLocalByLongPress) {
+                 // 出现保存到本地的操作框
+-                _this.setState({ isShowMenu: true });
++                // _this.setState({ isShowMenu: true });
+             }
+             if (_this.props.onLongPress) {
+                 _this.props.onLongPress(image);
+diff --git a/node_modules/react-native-image-zoom-viewer/built/image-viewer.style.js b/node_modules/react-native-image-zoom-viewer/built/image-viewer.style.js
+index c6efc53..648e7d6 100644
+--- a/node_modules/react-native-image-zoom-viewer/built/image-viewer.style.js
++++ b/node_modules/react-native-image-zoom-viewer/built/image-viewer.style.js
+@@ -57,7 +57,8 @@ exports.simpleStyle = {
+         backgroundColor: 'transparent'
+     },
+     countText: {
+-        color: 'white',
++        // color: 'white',
++        color: 'transparent',
+         fontSize: 16,
+         backgroundColor: 'transparent',
+         textShadowColor: 'rgba(0, 0, 0, 0.3)',
+diff --git a/node_modules/react-native-image-zoom-viewer/src/image-viewer.style.ts b/node_modules/react-native-image-zoom-viewer/src/image-viewer.style.ts
+index 0b9272b..2826fe4 100644
+--- a/node_modules/react-native-image-zoom-viewer/src/image-viewer.style.ts
++++ b/node_modules/react-native-image-zoom-viewer/src/image-viewer.style.ts
+@@ -66,10 +66,12 @@ export const simpleStyle: {
+     backgroundColor: 'transparent'
+   },
+   countText: {
+-    color: 'white',
++    // color: 'white',
++    color: 'transparent',
+     fontSize: 16,
+     backgroundColor: 'transparent',
+-    textShadowColor: 'rgba(0, 0, 0, 0.3)',
++    // textShadowColor: 'rgba(0, 0, 0, 0.3)',
++    textShadowColor: 'transparent',
+     textShadowOffset: {
+       width: 0,
+       height: 0.5
